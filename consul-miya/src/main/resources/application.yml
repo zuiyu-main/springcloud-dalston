@@ -1,0 +1,19 @@
+
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        prefer-ip-address: true
+        healthCheckPath: ${management.contextPath}/health
+        healthCheckInterval: 15s
+        instance-id: consul-miya
+#        instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}
+#        health-check-url: http://${spring.cloud.client.ip-address}:${server.port}
+  application:
+    name: consul-miya
+server:
+  port: 8502
+logging:
+  file: ${spring.application.name}.log
