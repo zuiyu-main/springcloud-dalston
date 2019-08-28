@@ -6,10 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="eureka-consumer" />
+        <module name="eureka-server" />
         <module name="eureka-consumer-ribbon" />
         <module name="eureka-consumer-feign" />
-        <module name="eureka-server" />
-        <module name="eureka-consumer" />
         <module name="consul-miya" />
         <module name="eureka-client2" />
         <module name="eureka-client1" />
